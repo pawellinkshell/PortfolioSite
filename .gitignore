@@ -14,4 +14,4 @@ dist
 #*.min.*
 
 # Abandon stylesheets
-*.css
+#*.css
