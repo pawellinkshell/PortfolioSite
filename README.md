@@ -39,7 +39,7 @@ See also the list of [contributors](https://github.com/pawellinkshell/portfolios
 
 ## Copyright and License
 
-Copyright 2017 Jan Koszela. Code released under the [MIT](https://github.com/pawellinkshell/portfoliosite/blob/gh-pages/LICENSE) license.
+Copyright 2017 Jan Koszela. Code released under the [MIT](https://github.com/pawellinkshell/PortfolioSite/blob/master/LICENSE) license.
 
 ## Acknowledgments
 
