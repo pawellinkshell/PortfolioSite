@@ -2,25 +2,25 @@
   {
     "date": "2009-2011",
     "title": "Our Humble Beginnings",
-    "image": "resources/img/about/1.jpg",
+    "image": "resources/media/img/about/1.jpg",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
   },
   {
     "date": "March 2011",
     "title": "An Agency is Born",
-    "image": "resources/img/about/2.jpg",
+    "image": "resources/media/img/about/2.jpg",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
   },
   {
     "date": "December 2012",
     "title": "Transition to Full Service",
-    "image": "resources/img/about/3.jpg",
+    "image": "resources/media/img/about/3.jpg",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
   },
   {
     "date": "July 2014",
     "title": "Phase Two Expansion",
-    "image": "resources/img/about/4.jpg",
+    "image": "resources/media/img/about/4.jpg",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
   }
 ]
