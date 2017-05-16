@@ -14,7 +14,7 @@ var pkg = require('./package.json');
 // Set the banner content
 var banner = ['/*!\n',
   ' * PortfolioSite - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-  ' * Copyright 2017-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
+  ' * Copyright ' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
   ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
   ' */\n',
   ''
@@ -40,7 +40,11 @@ gulp.task('copy', function() {
     '!node_modules/font-awesome/.npmignore',
     '!node_modules/font-awesome/*.txt',
     '!node_modules/font-awesome/*.md',
-    '!node_modules/font-awesome/*.json'
+    '!node_modules/font-awesome/*.json',
+    '!node_modules/font-awesome/less/*',
+    '!node_modules/font-awesome/less',
+    '!node_modules/font-awesome/scss/*',
+    '!node_modules/font-awesome/scss'
   ])
       .pipe(gulp.dest('vendor/font-awesome'))
 
@@ -96,9 +100,53 @@ gulp.task('browserSync', function() {
 })
 
 //
+// Preparing distribution.
+//
+gulp.task('prepareDist', function() {
+
+  // Vendor
+  gulp.src([
+      'vendor/**/*'
+  ])
+      .pipe(gulp.dest('dist/vendor'))
+
+  // Resources
+  gulp.src([
+    'resources/**/*'
+  ])
+      .pipe(gulp.dest('dist/resources'))
+
+  // Web components - CSS
+  gulp.src([
+    'web/css/portfolio.min.css'
+  ])
+      .pipe(gulp.dest('dist/web/css/'))
+
+  // Web components - JS
+  gulp.src([
+    'web/js/portfolio.min.js'
+  ])
+      .pipe(gulp.dest('dist/web/js/'))
+
+
+  // Source into distro
+  gulp.src([
+    'src/**/*'
+  ])
+      .pipe(gulp.dest('dist'))
+
+  // Index.html
+  gulp.src([
+      'index.html'
+  ])
+      .pipe(gulp.dest('dist'))
+
+})
+
+//
 // Dev task with browserSync
 //
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
+gulp.task('dev', ['prepareDist', 'browserSync', 'less', 'minify-css', 'minify-js'], function() {
   gulp.watch('web/less/*.less', ['less']);
   gulp.watch('web/css/*.css', ['minify-css']);
   gulp.watch('web/js/*.js', ['minify-js']);
