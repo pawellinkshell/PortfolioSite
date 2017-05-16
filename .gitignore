@@ -7,5 +7,14 @@ gen
 # node.js
 node_modules
 
-#used dependencies
+# Used library-dependencies
 vendor
+
+# Distribution
+dist
+
+# Abandon minifications
+*.min.*
+
+# Abandon stylesheets
+*.css
