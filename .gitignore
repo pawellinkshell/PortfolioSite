@@ -7,9 +7,6 @@ gen
 # node.js
 node_modules
 
-# Used library-dependencies
-vendor
-
 # Distribution
 dist
 
