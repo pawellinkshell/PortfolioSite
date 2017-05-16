@@ -11,7 +11,7 @@ node_modules
 dist
 
 # Abandon minifications
-*.min.*
+#*.min.*
 
 # Abandon stylesheets
 *.css
