@@ -1,0 +1,41 @@
+{
+  "name": "PortfolioSite",
+  "namelower": "portfoliosite",
+  "title": "Jan Koszela",
+  "version": "0.0.1+1",
+  "description": "An portfolio site based on AngularJS",
+  "homepage": "https://github.com/pawellinkshell/PortfolioSite",
+  "readme": "README.md",
+  "author": "Jan Koszela",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/pawellinkshell/PortfolioSite/blob/master/LICENSE"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.13.0",
+    "font-awesome": "^4.6.3",
+
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-header": "^1.8.7",
+    "gulp-install": "^1.1.0",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^1.11.3",
+
+    "angular": "^1.6.4",
+    "angular-animate": "^1.6.4",
+    "angular-touch": "^1.6.4",
+    "angular-ui-bootstrap": "^2.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pawellinkshell/portfoliosite.git"
+  },
+  "dependencies": {
+    "gulp-install": "^1.1.0"
+  }
+}
