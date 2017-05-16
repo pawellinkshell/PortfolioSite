@@ -124,7 +124,7 @@ gulp.task('prepareDist', function() {
 
   // Web components - JS
   gulp.src([
-    'web/js/portfolio.min.js'
+    'web/js/*.min.js'
   ])
       .pipe(gulp.dest('dist/web/js/'))
 
@@ -205,7 +205,7 @@ gulp.task('minify-css', ['less'], function() {
 
 // Minify JS
 gulp.task('minify-js', function() {
-  return gulp.src('web/js/portfolio.js')
+  return gulp.src('web/js/*.js')
       .pipe(uglify())
       .pipe(header(banner, { pkg: pkg }))
       .pipe(rename({ suffix: '.min' }))
