@@ -82,7 +82,7 @@ gulp.task('copy', function() {
 //
 // Run everything
 //
-gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['prepareDist', 'copy']);
 
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////   BrowserSync Management //////////////////////////////////////
@@ -102,7 +102,12 @@ gulp.task('browserSync', function() {
 //
 // Preparing distribution.
 //
-gulp.task('prepareDist', function() {
+gulp.task('prepareDist', [
+    'less',
+  'minify-css',
+  'minify-js'
+  // , 'minify-angular'
+], function() {
 
   // Vendor
   gulp.src([
@@ -133,7 +138,7 @@ gulp.task('prepareDist', function() {
   gulp.src([
     'src/**/*'
   ])
-      .pipe(gulp.dest('dist'))
+      .pipe(gulp.dest('dist/src'))
 
   // Index.html
   gulp.src([
@@ -146,10 +151,11 @@ gulp.task('prepareDist', function() {
 //
 // Dev task with browserSync
 //
-gulp.task('dev', ['prepareDist', 'browserSync', 'less', 'minify-css', 'minify-js'], function() {
+gulp.task('dev', ['browserSync', 'prepareDist'], function() {
   gulp.watch('web/less/*.less', ['less']);
   gulp.watch('web/css/*.css', ['minify-css']);
   gulp.watch('web/js/*.js', ['minify-js']);
+  gulp.watch('src/angular/**/*.js', ['minify-angular']);
   // Reloads the browser whenever HTML or JS files change
   gulp.watch('*.html', browserSync.reload);
   gulp.watch('web/js/**/*.js', browserSync.reload);
@@ -205,7 +211,7 @@ gulp.task('minify-css', ['less'], function() {
 
 // Minify JS
 gulp.task('minify-js', function() {
-  return gulp.src('web/js/*.js')
+  return gulp.src(['web/js/*.js', '!web/js/*.min.js'])
       .pipe(uglify())
       .pipe(header(banner, { pkg: pkg }))
       .pipe(rename({ suffix: '.min' }))
@@ -214,3 +220,16 @@ gulp.task('minify-js', function() {
         stream: true
       }))
 });
+
+// Minify Angular
+gulp.task('minify-angular', function() {
+  return gulp.src(['src/angular/**/*.js', '!src/angular/**/*.min.js'])
+      .pipe(uglify())
+      .pipe(header(banner, { pkg: pkg }))
+      .pipe(rename({ suffix: '.min' }))
+      .pipe(gulp.dest('src/angular'))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
+});
+
