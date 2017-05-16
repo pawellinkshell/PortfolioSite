@@ -1,0 +1,26 @@
+<div>
+  <div class="modal-header">
+    <h2 class="modal-title" id="modal-title">{{ $ctrl.selectedItem.name}}</h2>
+    <p class="item-intro text-muted">{{$ctrl.selectedItem.subtitle}}</p>
+    <div class="close-modal" ng-click="$ctrl.ok()">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-body" id="modal-body">
+    <p class="item-intro text-muted">{{$ctrl.selectedItem.subTitle}}</p>
+    <img class="img-responsive img-centered" ng-src="{{$ctrl.selectedItem.modalImage}}" alt="">
+
+    <!-- Content template -->
+    <ng-include src="$ctrl.selectedItem.templateUrl"></ng-include>
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary center-block" type="button" ng-click="$ctrl.ok()">
+      <i class="fa fa-times"></i> CLOSE WINDOW
+    </button>
+  </div>
+
+</div>
