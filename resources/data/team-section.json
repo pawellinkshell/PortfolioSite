@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Jan Koszela",
+    "jobTitle": "Full Stack Developer",
+    "image": "resources/img/team/jan_koszela.jpg",
+    "facebookLink": "https://www.facebook.com/jan.koszela",
+    "linkedInLink": "https://www.linkedin.com/in/jan-koszela-6bb38583/"
+  },
+  {
+    "name": "Larry Parker",
+    "jobTitle": "Lead Marketer",
+    "image": "resources/img/team/2.jpg",
+    "facebookLink": "#",
+    "linkedInLink": "#"
+  },
+  {
+    "name": "Diana Pertersen",
+    "jobTitle": "Lead Developer",
+    "image": "resources/img/team/3.jpg",
+    "facebookLink": "#",
+    "linkedInLink": "#"
+  }
+]

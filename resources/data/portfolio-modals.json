@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Round Icons",
+    "image": "resources/img/portfolio/roundicons.png",
+    "modalImage": "resources/img/portfolio/roundicons-preview.png",
+    "title": "Graphic Design",
+    "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "href": "#portfolioModal1",
+    "templateUrl": "src/angular/portfolio-section/portfolio-content/portfolio-content-1.template.html"
+  },
+  {
+    "name": "Startup Framework",
+    "image": "resources/img/portfolio/startup-framework.png",
+    "modalImage": "resources/img/portfolio/startup-framework-preview.png",
+    "title": "Website Design",
+    "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "href": "#portfolioModal2",
+    "templateUrl": "src/angular/portfolio-section/portfolio-content/portfolio-content-2.template.html"
+  },
+  {
+    "name": "Treehouse",
+    "image": "resources/img/portfolio/treehouse.png",
+    "modalImage": "resources/img/portfolio/treehouse-preview.png",
+    "title": "Website Design",
+    "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "href": "#portfolioModal3",
+    "templateUrl": "src/angular/portfolio-section/portfolio-content/portfolio-content-3.template.html"
+  },
+  {
+    "name": "Golden",
+    "image": "resources/img/portfolio/golden.png",
+    "modalImage": "resources/img/portfolio/golden-preview.png",
+    "title": "Graphic Design",
+    "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "href": "#portfolioModal4",
+    "templateUrl": "src/angular/portfolio-section/portfolio-content/portfolio-content-4.template.html"
+  },
+  {
+    "name": "Escape",
+    "image": "resources/img/portfolio/escape.png",
+    "modalImage": "resources/img/portfolio/escape-preview.png",
+    "title": "Website Design",
+    "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "href": "#portfolioModal5",
+    "templateUrl": "src/angular/portfolio-section/portfolio-content/portfolio-content-5.template.html"
+  },
+  {
+    "name": "Dreams",
+    "image": "resources/img/portfolio/dreams.png",
+    "modalImage": "resources/img/portfolio/dreams-preview.png",
+    "title": "Website Design",
+    "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "href": "#portfolioModal6",
+    "templateUrl": "src/angular/portfolio-section/portfolio-content/portfolio-content-6.template.html"
+  }
+]
