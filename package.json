@@ -13,32 +13,50 @@
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
-    "browser-sync": "^2.13.0",
     "font-awesome": "^4.6.3",
 
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.10",
-    "gulp-header": "^1.8.7",
-    "gulp-install": "^1.1.0",
-    "gulp-less": "^3.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^1.5.4",
-
-    "bower": "^1.8.0",
 
     "jquery": "^1.11.3",
 
     "angular": "^1.6.4",
     "angular-animate": "^1.6.4",
     "angular-touch": "^1.6.4",
-    "angular-ui-bootstrap": "^2.5.0"
+    "angular-ui-bootstrap": "^2.5.0",
+
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
+
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/pawellinkshell/portfoliosite.git"
   },
   "dependencies": {
-    "gulp-install": "^1.1.0"
+    "gulp-install": "^1.1.0",
+    "gulp-update": "^0.0.2",
+
+
+    "gulp-clean-css": "^2.0.10",
+    "gulp-header": "^1.8.7",
+    "gulp-install": "^1.1.0",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "gulp-jshint": "^2.0.4",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-concat": "^2.6.1",
+
+    "run-sequence": "^1.2.2",
+
+    "del": "^2.2.2",
+
+    "browser-sync": "^2.13.0",
+
+    "editorconfig": "^0.13.2",
+    "npm-check-updates": "^2.11.1"
   }
 }
