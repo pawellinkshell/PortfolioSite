@@ -7,8 +7,12 @@ gen
 # node.js
 node_modules
 
-# Distribution
+
+
+# Build, Distribution
+build
 dist
+
 
 # Abandon minifications
 #*.min.*
