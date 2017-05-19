@@ -11,7 +11,7 @@ node_modules
 
 # Build, Distribution
 build
-dist
+distro
 
 
 # Abandon minifications
