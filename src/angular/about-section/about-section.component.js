@@ -8,6 +8,10 @@ angular.module('aboutSection')
 
         var $ctrl = this;
 
+        $ctrl.scrollTo = function(event) {
+          scrollTo(event);
+        };
+
         // Get data from *.json file
         var url = 'resources/data/about-section.json';
 
