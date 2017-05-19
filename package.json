@@ -13,11 +13,11 @@
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
-    "font-awesome": "^4.6.3",
+    "font-awesome": "^4.7.0",
 
     "gulp": "^3.9.1",
 
-    "jquery": "^1.11.3",
+    "jquery": "^3.2.1",
 
     "angular": "^1.6.4",
     "angular-animate": "^1.6.4",
@@ -35,16 +35,17 @@
   "dependencies": {
     "gulp-install": "^1.1.0",
     "gulp-update": "^0.0.2",
+    "gulp-run": "^1.7.1",
 
 
-    "gulp-clean-css": "^2.0.10",
-    "gulp-header": "^1.8.7",
+    "gulp-clean-css": "^3.3.1",
+    "gulp-header": "^1.8.8",
     "gulp-install": "^1.1.0",
-    "gulp-less": "^3.1.0",
+    "gulp-less": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-notify": "^3.0.0",
-    "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^1.5.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
     "gulp-jshint": "^2.0.4",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-sourcemaps": "^2.6.0",
@@ -54,7 +55,7 @@
 
     "del": "^2.2.2",
 
-    "browser-sync": "^2.13.0",
+    "browser-sync": "^2.18.11",
 
     "editorconfig": "^0.13.2",
     "npm-check-updates": "^2.11.1"
