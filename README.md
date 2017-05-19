@@ -12,14 +12,24 @@
 
 To use the source files, you will need to have [npm](https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm) installed globally along with [Gulp.js](http://gulpjs.com/). 
 
-To Start:
+#### To Start:
+First thing to do, is install root modules
 * Run `npm install` in the root directory
-* Run `gulp dev` and edit the files as needed
 
-If you need to update the plugins included with this template, simply run the following tasks:
-* Run `npm update` to update the dependencies
-* Next run `gulp copy` to copy the new versions to project 
+#### To run:
+Second thing to do is build and run project in prefer mode:
+* Run `gulp build` before you run any mode
+  * Run `gulp prod` to run project from `distro` folder in production mode
+  * Run `gulp dev` to run project in development mode from main folder
 
+#### To update
+If you need, to have up-to-date plugins included with this template, simply run the following tasks:
+* Run `gulp update` to update `package.json` file for the new version of its dependency
+* Next run `npm update` to update dependency for `node_modules`
+* Last step run `gulp copy` to update vendor in project 
+
+#### To clean
+If you need to remove `build` and `distro` folders from project just run `gulp clean`
 
 ## Built With
 
