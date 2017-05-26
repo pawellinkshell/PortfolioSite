@@ -1,5 +1,5 @@
 /*!
- * PortfolioSite - Jan Koszela v0.0.1+1 (https://github.com/pawellinkshell/PortfolioSite)
+ * PortfolioSite - Jan Koszela v0.1.2 (https://github.com/pawellinkshell/PortfolioSite)
  * Copyright 2017 Jan Koszela
  * Licensed under MIT (https://github.com/pawellinkshell/PortfolioSite/blob/master/LICENSE)
  */
@@ -560,7 +560,7 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  background-image: url('../resources/media/img/map-image.png');
+  background-image: url('/resources/media/img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -747,4 +747,4 @@ body {
   webkit-tap-highlight-color: #fed136;
 }
 
-/*# sourceMappingURL=portfolio.css.map */
+/*# sourceMappingURL=project.bundle.css.map */
