@@ -18,9 +18,8 @@ First thing to do, is install root modules
 
 #### To run:
 Second thing to do is build and run project in prefer mode:
-* Run `gulp build` before you run any mode
-  * Run `gulp prod` to run project from `distro` folder in production mode
-  * Run `gulp dev` to run project in development mode from main folder
+* Run `gulp serve:prod` to run project from `distro` folder in production mode
+* Run `gulp serve:dev` to run project in development mode from main folder
 
 #### To update
 If you need, to have up-to-date plugins included with this template, simply run the following tasks:
@@ -29,7 +28,7 @@ If you need, to have up-to-date plugins included with this template, simply run 
 * Last step run `gulp copy` to update vendor in project 
 
 #### To clean
-If you need to remove `build` and `distro` folders from project just run `gulp clean`
+If you need to remove `build`, `distro` and assets files from project just run `gulp clean`
 
 ## Built With
 

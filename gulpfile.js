@@ -20,11 +20,11 @@ requireDir('./gulp');
 // Run application in production mode from  'distro' folder
 //
 gulp.task('serve:prod', function() {
-  runSequence('build:prod', 'html:prod', 'dist',  'browserSyncProd');
+  runSequence('build:prod', 'html:prod', 'dist', 'test', 'browserSyncProd');
 });
 
 gulp.task('serve:dev', function () {
-  runSequence('build', 'html:dev', 'browserSyncDev');
+  runSequence('build', 'html:dev', 'test', 'browserSyncDev');
 
   livereload.listen();
   // Reloads the browser whenever HTML or JS files change
@@ -145,4 +145,8 @@ gulp.task('bump', function () {
   gulp.src('./package.json')
     .pipe(bump())
     .pipe(gulp.dest('./'))
+});
+
+gulp.task('test', function () {
+	console.log('task \'test\' is not yet implemented');
 });
