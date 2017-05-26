@@ -33,7 +33,7 @@ var banner = ['/*!\n',
 // PUBLIC
 // Prepare scripts
 //
-gulp.task('scripts', ['eslint'], function () {
+gulp.task('scripts', ['lint'], function () {
   var scriptSource = paths.jsOut+'/*.js';
   var scriptDestination = paths.jsOut;
 
@@ -79,19 +79,4 @@ gulp.task('lint', function () {
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'))
     .pipe(gulp.dest(lintDestination))
-});
-
-gulp.task('eslint', function () {
-  var lintSource = [
-  	paths.js+'/*.js',
-		paths.angularApp+'/**/*.js'
-	];
-  var lintDestination = paths.jsOut;
-
-  del(paths.jsOut+'/*.js');
-
-  return gulp.src(lintSource)
-    .pipe(eslint())
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError())
 });
