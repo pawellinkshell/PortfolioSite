@@ -2,7 +2,7 @@
   "name": "PortfolioSite",
   "namelower": "portfoliosite",
   "title": "Jan Koszela",
-  "version": "0.0.1+1",
+  "version": "0.1.2",
   "description": "An portfolio site based on AngularJS",
   "homepage": "https://github.com/pawellinkshell/PortfolioSite",
   "readme": "README.md",
@@ -25,7 +25,8 @@
     "angular-ui-bootstrap": "^2.5.0",
 
     "jshint": "^2.9.4",
-    "jshint-stylish": "^2.2.1"
+    "jshint-stylish": "^2.2.1",
+    "eslint": "^3.19.0"
 
   },
   "repository": {
@@ -36,26 +37,33 @@
     "gulp-install": "^1.1.0",
     "gulp-update": "^0.0.2",
     "gulp-run": "^1.7.1",
-
+    "gulp-inject": "^4.2.0",
+    "gulp-natural-sort": "^0.1.1",
+    "gulp-order2": "^2.0.5",
+    "gulp-ignore": "^2.0.2",
+    "gulp-rev": "^7.1.2",
+    "gulp-bump": "^2.7.0",
 
     "gulp-clean-css": "^3.3.1",
     "gulp-header": "^1.8.8",
     "gulp-install": "^1.1.0",
     "gulp-less": "^3.3.0",
     "gulp-rename": "^1.2.2",
-    "gulp-notify": "^3.0.0",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.1.2",
     "gulp-jshint": "^2.0.4",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-concat": "^2.6.1",
+    "gulp-changed": "^3.1.0",
+    "gulp-imagemin": "^3.2.0",
 
     "run-sequence": "^1.2.2",
 
     "del": "^2.2.2",
 
     "browser-sync": "^2.18.11",
+    "gulp-livereload": "^3.8.1",
 
     "editorconfig": "^0.13.2",
     "npm-check-updates": "^2.11.1"
