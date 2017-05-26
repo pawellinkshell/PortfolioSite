@@ -1,10 +1,9 @@
 # PortfolioSite
 
-[PortfolioSite](http://jan.koszela.pl) is a page to say 'Hi, Hello' who will visit me, created by Jan Koszela. This theme have several content sections, responsive portfolio grid with hover effects, full page portfolio item modals, responsive timeline and NOT WORKING yet contact form based on PHP.
+[PortfolioSite](https://pawellinkshell.github.io/PortfolioSite/) is a page to say 'Hi, Hello' who will visit me, created by Jan Koszela. This theme have several content sections, responsive portfolio grid with hover effects, full page portfolio item modals, responsive timeline and NOT WORKING yet contact form based on PHP.
 
 ## Getting Started
 
-* [Download the latest release on jan.koszela.pl](http://jan.koszela.pl/)
 * Clone the repo: `git clone https://github.com/pawellinkshell/portfoliosite.git`
 * Fork the repo
 
