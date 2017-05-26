@@ -3,18 +3,14 @@
  */
 
 var gulp = require('gulp');
+var concat = require('gulp-concat');
+var order = require('gulp-order2');
+var rev = require('gulp-rev');
+
+var runSequence = require('run-sequence');
 
 // Project paths to manage
 var paths = require('../gulpPaths.json');
-var pkg = require('../../package.json');
-// Set the banner content
-var banner = ['/*!\n',
-  ' * PortfolioSite - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-  ' * Copyright ' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-  ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
-  ' */\n',
-  ''
-].join('');
 
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////    Sources Management //////////////////////////////////////
@@ -24,8 +20,57 @@ var banner = ['/*!\n',
 // Preparing sources
 //
 gulp.task('source', function () {
-  return gulp.src([
-    'src/**/*.*'
-  ])
-    .pipe(gulp.dest(paths.build+'/src'))
+
+  // take everything except 'index.base.html' file
+  var sourceFileSource = [
+        paths.source+'/**/*.*',
+        '!'+paths.source+'/'+paths.html
+      ];
+  var sourceDestination = paths.build+'/'+ paths.source;
+  
+  return gulp.src(sourceFileSource)
+    .pipe(gulp.dest(sourceDestination))
+});
+
+// PUBLIC
+// Preparing sources for production used
+//
+gulp.task('source:prod', function (cb) {
+  runSequence('copyProject', 'prepareAngular', cb);
+});
+
+// 'source:prod' routine
+//
+// Copy all from build except: index.html and angular files
+gulp.task('copyProject', function () {
+
+  var sourceFilesSource = [
+        paths.source+'/**/*.*',
+        '!'+paths.source+'/'+paths.html,
+        '!'+paths.angularApp
+      ];
+  var sourceDestination = paths.build+'/'+ paths.source;
+  
+  return gulp.src(sourceFilesSource)
+        .pipe(gulp.dest(sourceDestination))
+});
+
+// 'source:prod' routine
+//
+// Concatenate all angular files in order and without minification
+gulp.task('prepareAngular', function () {
+  var angularSource = paths.angularApp+'/**/*.js';
+  var angularDestination = paths.build+'/'+ paths.angularApp;
+
+  var sortOrderFiles = [
+        "**/*.module.js"
+      ];
+
+  var projectAngularBundleFile = 'project.angular.bundle.js';
+
+  return gulp.src(angularSource)
+    .pipe(order(sortOrderFiles))
+    .pipe(concat(projectAngularBundleFile))
+    .pipe(rev())
+    .pipe(gulp.dest(angularDestination))
 });
