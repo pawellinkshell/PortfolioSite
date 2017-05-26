@@ -7,7 +7,7 @@ var runSequence = require('run-sequence');
 // Required gulp tasks
 var requireStyles = require('require-dir')('./styles');
 var requireScripts = require('require-dir')('./scripts');
-var requireScripts = require('require-dir')('./vendors');
+var requireVendors = require('require-dir')('./vendors');
 var requireResources = require('require-dir')('./resources');
 var requireSources = require('require-dir')('./sources');
 var requireHtml = require('require-dir')('./html');

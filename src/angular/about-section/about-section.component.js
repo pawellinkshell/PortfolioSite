@@ -1,29 +1,29 @@
 // Components
 angular.module('aboutSection')
-    .component('aboutSection', {
-      // Note: The URL is relative to our `index.html` file
-      templateUrl: 'src/angular/about-section/about-section.template.html',
+	.component('aboutSection', {
+		// Note: The URL is relative to our `index.html` file
+		templateUrl: 'src/angular/about-section/about-section.template.html',
 
-      controller: function AboutSectionController($http) {
+		controller: function AboutSectionController($http) {
 
-        var $ctrl = this;
+			var $ctrl = this;
 
-        $ctrl.scrollTo = function(event) {
-          scrollTo(event);
-        };
+			$ctrl.scrollTo = function (event) {
+				scrollTo(event);
+			};
 
-        // Get data from *.json file
-        var url = 'resources/data/about-section.json';
+			// Get data from *.json file
+			var url = 'resources/data/about-section.json';
 
-        $http({
-          method: 'GET',
-          url: url
-        }).then(function (success) {
-          $ctrl.aboutSections = success.data;
-          console.log("Data loaded from *.json file");
-        }, function (error){
-          console.log("Cannot load data from *.json file");
-        });
+			$http({
+				method: 'GET',
+				url: url
+			}).then(function (success) {
+				$ctrl.aboutSections = success.data;
+				console.log("Data loaded from *.json file");
+			}, function (error) {
+				console.log("Cannot load data from *.json file");
+			});
 
-      }
-    });
+		}
+	});
